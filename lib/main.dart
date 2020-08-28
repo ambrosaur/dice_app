@@ -18,6 +18,13 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: <Widget>[
+        Expanded(
+          //expands, auto resize to fill available space horizontally
+          child: Image(image: AssetImage('images/dice1.png')),
+        ),
+      ],
+    );
   }
 }
